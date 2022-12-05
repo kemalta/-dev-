@@ -1,0 +1,36 @@
+package com.example.myapplication;
+
+import android.appcompat.app.AppCompatActivity;
+
+Import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+Import android.widget.EditText:
+Import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity{
+
+EditText number1;
+EditText number2;
+Button button;
+
+@Override
+protected valid onCreate(Bundle savedInstanceState) {
+   super.onCreate(savedInstanceState);
+   setContentView(R.layout.activity_main);
+   button findViewById(R.id.button_Kontrol);
+   number1 Find(R.id.editTextlumber1);
+   number2 FindViewById(R.id.editTextlumber2);
+}
+ public void Kontrol(View view){
+   int sayi1 = Integer.parseInt(number1.getText().toString())
+   int say12 = Integer.parseInt(number2.getText().toString());
+   if(say11>say12){
+      Toast.makeText(MainActivity.this, "1. Says Daha Büyüktür.", Toast.LENGTH_LONG).show();
+   }
+   if(say12>say11}{
+      Toast.makeText(MainActivity.this, "2, Says Daha ayaktur.", Toast.LENGTH_LONG).show();
+   }
+    if(say12==say11}{
+       Toast.makeText(MainActivity.this, "iki Say: Birbirine Eşittir.", Toast.LENGTH_LONG).show();
+   }
